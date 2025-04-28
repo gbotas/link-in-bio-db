@@ -1,6 +1,43 @@
-<h1> Hello, world! </h1>
+ <div class="main-container";>
 
-<% Item.all.each do |the_item| %>
+      <div class= "image-row">
+        <img class="avatar-image" src="/Profile pic.jpeg" alt="Gonzalo Botas profile picture">
+        </div>
+
+      <div class= "name-row">
+        Gonzalo Botas
+        </div>
+      
+      <div class= "social-icons-row">
+          <a href="https://github.com/gbotas" target= "_blank">
+            <i class="fa-brands fa-github"></i>
+            
+          </a>
+
+          <a href="https://www.linkedin.com/in/gonzalobr/" target= "_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            
+          </a>
+
+
+          <a href="https://www.instagram.com/gonzalerasb/" target= "_blank">
+            <i class="fa-brands fa-instagram"></i>
+            
+          </a>
+
+          <a href="https://x.com/gjbotas" target= "_blank">
+            <i class="fa-brands fa-x-twitter"></i>
+            
+          </a>
+
+
+  </div>
+
+
+
+
+
+<% @list_of_items.each do |the_item| %>
   <div>
     <a href= "<%= the_item.link_url %>">
       <%= the_item.link_description %>
